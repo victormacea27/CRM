@@ -1,0 +1,21 @@
+#menuCompany {
+    text-align: center;
+    #titleCompany{
+        margin: 20px 0 20px 0;
+        color: $Color-White;
+    }
+    .containerUp{
+        margin-bottom: 20px;
+    }
+}
+#modalCompany{
+    display: none;
+}
+nav{
+    background-color: $Color-Header;    
+}
+
+#tablaCompanias_info{
+    color: white;
+}
+

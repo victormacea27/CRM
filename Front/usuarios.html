@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body id="bodyUser">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://www.flaticon.es/svg/static/icons/svg/906/906341.svg" width="30" height="30" alt="">
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="contactos.html">Contactos</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="usuarios.html" id="btnUser">Usuarios</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="companias.html">Compañia</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="regiones.html">Región/Ciudad</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main id="menuUsuarios">
+        <h1 id="tituloUsuario">Usuarios</h1>
+        <div class="containerUp">
+            <button id="addUser" class="btn btn-success btn-sm">Agregar usuario</button>
+        </div>
+        <section id="list">
+            <table id="tablaUsuarios" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>email</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="rows">
+                </tbody>
+            </table>
+                    <!-- Modal Editar -->
+                <div class="modal fade" id="editarUsuario" tabindex="100" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Editar Usuario</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body" id="editUSer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="modalUser">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-sm">
+                            <form id="modalUser" class="form-horizontal" method="post">
+                                <fieldset>
+                                    <legend class="text-center headerUser">Crear usuario</legend>
+                                    <div class="form-group col-md-8">
+                                        <div>
+                                            <label for="nombre">Nombre:</label>
+                                            <input id="nombre" name="name" type="text" placeholder="Nombres" class="form-control" required >
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-8">
+                                        <div >
+                                            <label for="apellido">Apellido:</label>
+                                            <input id="apellido" name="name" type="text" placeholder="Apellidos" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-8">
+                                        <div >
+                                            <label for="email">Email:</label>
+                                            <input id="email" name="email" type="email" placeholder="Email Address" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-group col-md-11">
+                                            <label for="perfil">Perfil:</label>
+                                            <select id="perfil" class="form-control" placeholder="Selecciona una opción" required>
+                                            <option value="0">Selecciona una opción</option>    
+                                            <option value="1">Administrador</option>
+                                                <option value="2">Visitante</option>
+                                            </select>
+                                        </div>
+                                    </div>         
+                                    <div class="form-group col-md-8">
+                                        <div >
+                                            <label for="contrasena">contraseña:</label>
+                                            <input id="contrasena" name="phone" type="password" placeholder="Contraseña" class="form-control" required minlength="6">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-8">
+                                        <div >
+                                            <label for="repetirContrasena">contraseña:</label>
+                                            <input id="repetirContrasena" name="phone" type="password" placeholder="Repetir Contrasena" class="form-control" required minlength="6">
+                                        </div>
+                                    </div>       
+                                    <div class="modal-footer">
+                                        <div class="col-md-12 text-center">
+                                            <button type="button" class="btn btn-success btn-lg" id="creaUsuario">Crear</button>
+                                            <button type="button" class="btn btn-danger btn-lg" onclick="mostrar()">Cancelar</button>
+                                            <p id="responseCrearUser" class="login-card-footer-text"></p>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/script/usuarios.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+</body>
+</html>

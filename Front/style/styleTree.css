@@ -1,0 +1,86 @@
+main{
+    background-color: #1f1f1f;
+    color: white;
+    height: 100%;
+    padding-bottom: 250px;
+}
+ul, #myUL {
+    list-style-type: none;
+}
+
+#myUL {
+    margin: 0;
+    padding: 0;
+}
+
+.caret {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.caret-down::before {
+    transform: rotate(90deg);  
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+#myUL{
+    margin-top: 50px;
+    margin-left: 40%;
+}
+
+.containerUp{
+    margin-top: 50px;
+    text-align: center;
+}
+#responseCrearRegion{
+    margin-top: 10px;
+    text-align: center;
+}
+
+header .navbar-nav {
+    margin-left: 70%; 
+}
+
+nav{
+    background-color: #fd6b3c;    
+}
+
+#modal-content{
+    background-color: rgb(199, 196, 196);
+    color: black;
+}
+#contentAgregarRegion{
+    background-color: rgb(199, 196, 196);
+    color: black;
+}
+#modal-contentAgregarPaisCiudad{
+    background-color: rgb(199, 196, 196);
+    color: black;
+}
+
+#modal-contentAgregarRegion{
+    background-color: rgb(199, 196, 196);
+    color: black;  
+}

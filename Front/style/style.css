@@ -1,0 +1,209 @@
+#bodyLogin {
+  color: white; }
+
+#logoLogin {
+  margin-top: 50px;
+  margin-left: 43%;
+  margin-bottom: 50px; }
+
+header .navbar-nav {
+  margin-left: 70%; }
+
+main h3 {
+  text-align: center; }
+
+#advertencia {
+  color: red; }
+
+#responseLogin {
+  text-align: center;
+  color: #ff5a24; }
+
+#menuUsuarios {
+  text-align: center; }
+  #menuUsuarios #tituloUsuario {
+    margin: 20px 0 20px 0;
+    color: #FFF; }
+  #menuUsuarios .containerUp {
+    margin-bottom: 20px; }
+
+nav {
+  background-color: #ff5a24; }
+
+#tablaUsuarios_info {
+  color: #FFF; }
+
+label {
+  color: #FFF; }
+
+select {
+  color: #FFF; }
+  select:hover {
+    color: #000; }
+
+tr {
+  background-color: #fd6b3c;
+  color: #FFF; }
+
+td {
+  color: #000; }
+
+body {
+  background-color: #1f1f1f; }
+
+.dataTables_filter input {
+  color: #FFF; }
+
+.form-horizontal {
+  display: none;
+  margin-top: 30px;
+  margin-left: 30%;
+  background: #c7c4c4;
+  width: 500px; }
+  .form-horizontal input {
+    width: 450px; }
+  .form-horizontal label {
+    margin-left: 50%;
+    color: #000; }
+  .form-horizontal .usuarios {
+    margin-left: 300px; }
+  .form-horizontal .headerUser {
+    color: #FFF;
+    margin-right: 45%; }
+  .form-horizontal .form-group {
+    height: 70px;
+    text-align: center; }
+  .form-horizontal button {
+    margin-top: 20px; }
+  .form-horizontal p {
+    margin-top: 5px;
+    color: #000; }
+
+.modal-content {
+  background: #c7c4c4; }
+
+.modal-body label {
+  color: black; }
+
+#menuContactos {
+  text-align: center; }
+  #menuContactos #tituloUsuario {
+    margin: 20px 0 20px 0; }
+  #menuContactos .containerUp {
+    margin-bottom: 20px; }
+
+#modalContact {
+  display: none; }
+
+h1 {
+  color: white; }
+
+select {
+  color: #FFF; }
+  select:hover {
+    color: #000; }
+
+tr {
+  background-color: #fd6b3c;
+  color: #FFF; }
+
+td {
+  color: #000; }
+
+#tablaContactos_info {
+  color: #FFF; }
+
+#menuCompany {
+  text-align: center; }
+  #menuCompany #titleCompany {
+    margin: 20px 0 20px 0;
+    color: #FFF; }
+  #menuCompany .containerUp {
+    margin-bottom: 20px; }
+
+#modalCompany {
+  display: none; }
+
+nav {
+  background-color: #ff5a24; }
+
+#tablaCompanias_info {
+  color: white; }
+
+main {
+  background-color: #1f1f1f;
+  color: white;
+  height: 100%;
+  padding-bottom: 200px; }
+
+ul, #myUL {
+  list-style-type: none; }
+
+#myUL {
+  margin: 0;
+  padding: 0; }
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none;
+  /* Safari 3.1+ */
+  -moz-user-select: none;
+  /* Firefox 2+ */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none; }
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px; }
+
+.caret-down::before {
+  transform: rotate(90deg); }
+
+.nested {
+  display: none; }
+
+.active {
+  display: block; }
+
+h1 {
+  text-align: center;
+  color: white; }
+
+#myUL {
+  margin-top: 50px;
+  margin-left: 40%; }
+
+.containerUp {
+  margin-top: 50px;
+  text-align: center; }
+
+#responseCrearRegion {
+  margin-top: 10px;
+  text-align: center; }
+
+header .navbar-nav {
+  margin-left: 70%; }
+
+nav {
+  background-color: #fd6b3c; }
+
+#modal-content {
+  background-color: #c7c4c4;
+  color: black; }
+
+#contentAgregarRegion {
+  background-color: #c7c4c4;
+  color: black; }
+
+#modal-contentAgregarPaisCiudad {
+  background-color: #c7c4c4;
+  color: black; }
+
+#modal-contentAgregarRegion {
+  background-color: #c7c4c4;
+  color: black; }
+
+/*# sourceMappingURL=style.css.map */

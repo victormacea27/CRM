@@ -1,0 +1,32 @@
+#menuContactos {
+    text-align: center;
+    #tituloUsuario{
+        margin: 20px 0 20px 0;
+    }
+    .containerUp{
+        margin-bottom: 20px;
+    }
+}
+#modalContact{
+    display: none;
+}
+h1{
+    color: white;
+}
+
+select{
+    color: $Color-White;
+    &:hover{
+        color: $Color-black;
+    }
+}
+tr{
+    background-color: $color-tr-table;
+    color: $Color-White; 
+}
+td{
+    color: $Color-black;
+}
+#tablaContactos_info{
+    color: $Color-White; 
+}

@@ -1,0 +1,87 @@
+#menuUsuarios {
+        text-align: center;
+        #tituloUsuario{
+            margin: 20px 0 20px 0;
+            color: $Color-White;
+        }
+        .containerUp{
+            margin-bottom: 20px;
+        }
+}
+nav{
+    background-color: $Color-Header;    
+}
+
+#tablaUsuarios_info{
+    color: $Color-White;
+}
+label{
+    color: $Color-White;   
+}
+select{
+    color: $Color-White;
+    &:hover{
+        color: $Color-black;
+    }
+}
+tr{
+    background-color: $color-tr-table;
+    color: $Color-White; 
+}
+td{
+    color: $Color-black;
+}
+body{
+    background-color: $color-dark;
+
+}
+.dataTables_filter{
+    input{
+        color: $Color-White; 
+    }
+}
+
+.form-horizontal{
+    display: none;
+    margin-top: 30px;
+    margin-left: 30%;
+    background: $color-gris-modal;
+    width: 500px;
+    //display: none;
+    input{
+        width: 450px;
+    }
+    label{
+        margin-left: 50%;
+        color: $Color-black;
+    }
+    .usuarios{
+        margin-left: 300px;
+    }
+    .headerUser {
+        color: $Color-White;
+        margin-right: 45%;
+    }
+    
+    .form-group{
+        height: 70px;
+        text-align: center;
+    }
+    button{
+        margin-top: 20px;
+    }
+    p{
+        margin-top: 5px; 
+        color: $Color-black;
+    }
+    
+}
+
+.modal-content{
+    background: $color-gris-modal;
+}
+.modal-body{
+    label{
+        color: black;
+    }
+}
